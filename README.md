@@ -1,1 +1,1 @@
-# RPS
+# RPS - For this project, I will practise basic JS skills I have recently learned through reading documentation. 
