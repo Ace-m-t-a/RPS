@@ -16,21 +16,27 @@ function playerSelection(){
 }
 
 function playRound(playerSelection, computerPlay){
-    if (computerPlay === playerSelection){
+    if (playerSelection == "rock" && computerPlay == "scissors"){
+        console.log("The Player won!");
+        playerScore++;
+    }  else if(playerSelection == "rock" && computerPlay == "paper"){
+        console.log("The computer won!");
+        computerScore++;
+    } else if(playerSelection == "paper" && computerPlay == "scissors"){
+        console.log("The Computer won!");
+        computerScore++;
+    } else if(playerSelection == "paper" && computerPlay == "rock"){
+        console.log("The player won!");
+        playerScore++;
+    } else if(playerSelection == "scissors" && computerPlay == "rock"){
+        console.log("The computer won!");
+        computerScore++;
+    } else if(playerSelection == "scissors" && computerPlay == "paper"){
+        console.log("The player won!");
+        playerScore++;
+    } else {
         console.log("This game is a draw!");
         draw++;
-    } else if (computerPlay === "rock" && playerSelection !== "paper"){
-        console.log("The computer won this round!");
-        computerScore++;
-    } else if (computerPlay === "rock" && playerSelection === "paper"){
-        console.log("Player won this round!");
-        playerScore++;
-    } else if (playerSelection === "rock" && computerPlay !== "paper"){
-        console.log("The player won this round!");
-        playerScore++;
-    } else if (playerSelection === "rock" && computerPlay === "paper"){
-        console.log("The computer won this round!");
-        computerScore++;
     }
 }
 
@@ -43,8 +49,9 @@ function game(playRound){
     } else if (playerScore > computerScore){
         console.log("The player won the whole game!");
     } else {
-        console.log("The game is a draw!");
+        console.log("The whole game is a draw!");
     }
+     //function does not return a value, instead returns undefined
 }
 
 
