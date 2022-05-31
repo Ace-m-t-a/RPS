@@ -1,0 +1,27 @@
+.button {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}

@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="container">
+        <div>
+            <p class="title">Welcome to RPS!</p>
+            <p class="intro">Best out of five! Then the champion will be&nbsp;<strong> crowned</strong>.</p>
+            <p class="intro">Select any button to begin...</p>
+        </div>
+        <div class="container-2">
+            <input type="image" src="./images/rock.jpg" alt="https://www.pexels.com/photo/low-angle-shot-of-rock-formation-1366909/" name="saveForm" class="button" id="rock"/>
+            <input type="image" src="./images/paper.jpg" alt="https://www.pexels.com/photo/blank-white-paper-sheet-on-wooden-table-4207707/" name="saveForm" class="button" id="paper"/>
+            <input type="image" src="./images/scissors.jpg" alt="https://www.pexels.com/photo/silver-scissors-on-white-surface-3990146/" name="saveForm" class="button" id="scissors"/>
+        </div>
+        <div>
+            <p id="player">The player has selected: </p>
+        </div>
+        <div>
+            <p id="computer">The computer has selected: </p>
+        </div>
+        <div>
+            <p id="score">The winner of this round is:</p>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
